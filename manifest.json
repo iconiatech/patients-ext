@@ -1,0 +1,20 @@
+{
+    "name": "My Extension",
+    "description": "This is my first ext",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/img/icon_128.png"
+        }
+    },
+    "icons": {
+        "128": "/img/icon_128.png"
+    }
+}

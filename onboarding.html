@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="./another.css">
+
+</head>
+<body>
+
+    <button id="modal-btn" class="button">Click Here</button>
+
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+            
+            <!-- Tab links -->
+            <div class="other-tab">
+                <button class="other-tablinks" onclick="openCity(event, 'ICD')" id="defaultOpen">ICD-10-CM</button>
+                <button class="other-tablinks" onclick="openCity(event, 'Entities')">Entities</button>
+                <button class="other-tablinks" onclick="openCity(event, 'Match')">Match Cases</button>
+            </div>
+  
+            <!-- Tab content -->
+            <div id="ICD" class="other-tabcontent">
+                <h3>ICD-10-CM</h3>
+
+                <h4>coronary artery disease​</h4>
+                
+                <h5>Top inferred concepts</h5>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <p>
+                                <em>I25.10​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery without angina pectoris​ <br>
+                                <strong>Score: 0.9260</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.119​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris​​ <br>
+                                <strong>Score: 0.8527​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.110​​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unstable angina pectoris<br>
+                                <strong>Score: 0.8507​​</strong>
+                            </p>
+                        </li>
+                        <!-- <li>
+                            <p>
+                                <em>Z86.79​​​</em> <br>
+                                Personal history of other diseases of the circulatory system<br>
+                                <strong>Score: 0.8274​​​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.41​​​</em> <br>
+                                Coronary artery aneurysm​ <br>
+                                <strong>Score: 0.8204​​​</strong>
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+  
+            <div id="Entities" class="other-tabcontent">
+                <h3>Entities</h3>
+               
+                <h4>atrial fibrillation​</h4>
+                
+                <h5>Top inferred concepts</h5>
+                <div class="other-list">
+                    <ul>
+                        <li>
+                            <p>
+                                <em>I25.10​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery without angina pectoris​ <br>
+                                <strong>Score: 0.9260</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.119​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris​​ <br>
+                                <strong>Score: 0.8527​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.110​​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unstable angina pectoris<br>
+                                <strong>Score: 0.8507​​</strong>
+                            </p>
+                        </li>
+                        <!-- <li>
+                            <p>
+                                <em>Z86.79​​​</em> <br>
+                                Personal history of other diseases of the circulatory system<br>
+                                <strong>Score: 0.8274​​​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.41​​​</em> <br>
+                                Coronary artery aneurysm​ <br>
+                                <strong>Score: 0.8204​​​</strong>
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
+  
+            <div id="Match" class="other-tabcontent">
+                <h3>Match Cases</h3>
+                
+                <h4>hyperlipidemia​</h4>
+                
+                <h5>Top inferred concepts</h5>
+                <div class="other-list">
+                    <ul>
+                        <li>
+                            <p>
+                                <em>I25.10​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery without angina pectoris​ <br>
+                                <strong>Score: 0.9260</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.119​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris​​ <br>
+                                <strong>Score: 0.8527​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.110​​​</em> <br>
+                                Atherosclerotic heart disease of native coronary artery with unstable angina pectoris<br>
+                                <strong>Score: 0.8507​​</strong>
+                            </p>
+                        </li>
+                        <!-- <li>
+                            <p>
+                                <em>Z86.79​​​</em> <br>
+                                Personal history of other diseases of the circulatory system<br>
+                                <strong>Score: 0.8274​​​</strong>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <em>I25.41​​​</em> <br>
+                                Coronary artery aneurysm​ <br>
+                                <strong>Score: 0.8204​​​</strong>
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+        </div>
+    </div>
+
+    <script src="./another.js"></script>
+</body>
+</html>
