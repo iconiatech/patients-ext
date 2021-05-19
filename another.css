@@ -1,6 +1,11 @@
 :root {
   --modal-duration: 1s;
   --modal-color: #428bca;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 
 body {
@@ -41,7 +46,7 @@ body {
 
 .modal-content {
   margin: 3% auto;
-  width: 80%;
+  width: 85%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
@@ -134,6 +139,34 @@ body {
   .other-list li {
     padding-bottom: 0.1rem;
   }
+
+  .grid-container-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.text-warning {
+  color: var(--warning-color) !important;
+}
+
+.text-danger {
+  color: var(--danger-color) !important;
+}
+
+.text-success {
+  color: var(--success-color) !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
   
   /* Go from zero to full opacity */
   @keyframes fadeEffect {
